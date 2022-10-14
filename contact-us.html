@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+
+            font-family: Arial;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contactBanner1 {
+            background-color: lightgray;
+            height: 485px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .banner1_header {
+            font-size: 48px;
+
+        }
+
+        .banner1_content {
+            font-size: 14px;
+            width: 65%;
+        }
+
+        .contact_section1 {
+            width: 100%;
+            display: flex;
+            margin-top: 40px;
+            gap: 24px;
+            justify-content: center;
+        }
+
+        .section1_container {
+            display: flex;
+            width: 80%
+        }
+
+        .contact_info {
+
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .contact_info_header {
+            font-weight: 800;
+            font-size: 14px;
+            color: #7A7B7C;
+        }
+
+        .contact_info_content1 {
+            font-weight: 600;
+            font-size: 12px;
+            color: #D3AD67;
+        }
+
+        .contact_info_content2 {
+            font-weight: 600;
+            font-size: 12px;
+            color: #4F4F50;
+        }
+
+        .contact_info_content3 {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 150%;
+            color: #4F4F50;
+        }
+
+        .contact_form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        .form_header {
+            font-weight: 600;
+            font-size: 32px;
+        }
+
+        .form_content {
+            font-weight: 600;
+            font-size: 14px;
+            color: #7A7B7C;
+            padding-top: 10px;
+        }
+
+        .form_contact {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 48px;
+        }
+
+        .label1_input {
+
+            width: 50%;
+        }
+
+        .form_label1 {
+            display: flex;
+            font-weight: 800;
+            font-size: 14px;
+            gap: 70px;
+            color: #3D434A;
+        }
+
+        .form_label1 input {
+            margin-top: 8px;
+            height: 53px;
+            width: 100%;
+            padding-left: 10px;
+            border: 1px solid #707173;
+            border-radius: 2px;
+        }
+
+        .label2_input {
+            font-weight: 800;
+            font-size: 14px;
+            color: #3D434A;
+        }
+
+        .label2_input input {
+            margin-top: 8px;
+            height: 53px;
+            width: 100%;
+            border: 1px solid #707173;
+            border-radius: 2px;
+            padding-left: 10px;
+        }
+
+        .label3_input {
+            font-weight: 800;
+            font-size: 14px;
+            color: #3D434A;
+
+        }
+
+        .label3_input textarea {
+            margin-top: 8px;
+            height: 53px;
+            width: 100%;
+            height: 150px;
+            padding: 10px;
+            border: 1px solid #707173;
+            border-radius: 2px;
+
+        }
+
+        .contact_section2 {
+            width: 100%;
+            display: flex;
+            gap: 130px;
+            margin-top: 40px;
+            gap: 24px;
+            justify-content: center;
+            background-color: #FAFAFA;
+
+        }
+
+        .section2_container {
+            display: flex;
+            width: 100%;
+            margin-left: 50px;
+        }
+
+        .store_details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+            width: 20%;
+        }
+
+        .store_header {
+            font-weight: 600;
+            font-size: 32px;
+        }
+
+        .store_content1 {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .store_content2 {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .store_button {
+            padding: 8px 32px;
+            border-radius: 2px;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #3D434A;
+            background: transparent;
+        }
+
+        .send_button {
+            margin: 10px 0px;
+            padding: 8px 32px;
+            width: 40%;
+            border-radius: 2px;
+            font-weight: 600;
+            font-size: 14px;
+            color: #ffffff;
+            background: #3D434A;
+            border-radius: 2px;
+
+        }
+
+        .contact_map {
+            display: flex;
+            width: 80%;
+            margin: 40px 0px 40px 40px;
+            height: 300px;
+        }
+
+        .contact_image {
+            background: #C4C4C4;
+            width: 45%;
+            height: 100%;
+        }
+
+        .google_map {
+            background: #9C9C9C;
+            width: 55%;
+            height: 100%;
+        }
+
+        @media (max-width:600px) {
+            .section1_container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact_info {
+                width: 100%;
+                gap: 25px;
+                margin-bottom: 20px;
+            }
+
+            .contact_form {
+                width: 100%
+            }
+
+            .form_label1 {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .label1_input {
+                width: 100%;
+
+            }
+
+            .label2_input {
+                width: 100%;
+
+            }
+
+            .label3_input textarea {
+                margin-top: 0;
+            }
+
+            .store_button {
+                width: 40%;
+            }
+
+            .send_button {
+                width: 80%;
+            }
+
+            .section2_container {
+                margin-left: 0;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .store_details {
+                width: 100%;
+                margin: 50px 0px 20px 20px;
+            }
+
+            .label2_input input {
+                margin-top: 0px;
+            }
+
+            .contact_map {
+                flex-direction: column;
+                width: 100%;
+                margin: 0;
+            }
+
+            .contact_image {
+                width: 100%;
+            }
+
+            .google_map {
+                width: 100%;
+            }
+        }
+    </style>
+
+    <div>
+        <div class="contactBanner1">
+            <div class="banner1_header">
+                Contact us
+            </div>
+            <div class="banner1_content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit nisi nec sagittis vulputate.
+                Fusce tristique,
+                ante at tempus efficitur, justo erat pulvinar dolor, sed gravida orci purus blandit purus. Pellentesque
+                ultrices iaculis
+                risus, a laoreet orci scelerisque id. Nulla facilisi. Nullam vel sagittis elit. Integer nec.
+            </div>
+        </div>
+    </div>
+    <div class="contact_section1">
+        <div class="section1_container">
+            <div class="contact_info">
+                <div class="contact_info_header">Customer Support</div>
+                <div class="contact_info_content1">1234-1234-1234</div>
+                <div class="contact_info_content2">Mon-Fri: 9 – 6 pm<br>
+                    Sat-Sun: 10 – 4 pm </div>
+                <div class="contact_info_content3">Looking for more information on commonly asked questions?
+                    <span class="contact_info_content1"> Please view
+                        our FAQ’s.</span>
+                </div>
+            </div>
+            <div class="contact_form">
+                <div class="form_header">Contact us</div>
+                <div class="form_content">Drop your questions or comments below and we will get back to you in a few
+                    days.
+                </div>
+                <form class="form_contact">
+                    <label class="form_label1">
+                        <span class="label1_input ">Name<br /><input type="text" name="Name"
+                                placeholder="Name" /></span>
+                        <span class="label1_input">Email<br /><input type="text" name="Email"
+                                placeholder="Email" /></span>
+                    </label>
+                    <label>
+                        <span class="label2_input">
+                            Order Number (Optional)<br />
+                            <input type="text" name="Number" placeholder="Order Number" /></span>
+                    </label>
+                    <label>
+                        <span class="label3_input">
+                            Message<br />
+                            <textarea name="Message" rows="4"></textarea></span>
+                    </label>
+                    <button type="submit" class="send_button"> SEND MESSAGE</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="contact_section2">
+        <div class="section2_container">
+            <div class="store_details">
+                <div class="store_header">Our Store</div>
+                <div class="store_content1">
+                    123 street name,
+                    City, State
+                </div>
+                <div class="store_content1">
+                    Mon-Fri: 9 – 6 pm<br>
+                    Sat-Sun: 10 – 4 pm
+                </div>
+                <button class="store_button">Directions</button>
+            </div>
+            <div class="contact_map">
+                <div class="contact_image">
+
+                </div>
+                <div class="google_map">
+
+                </div>
+            </div>
+        </div>
+        <script>
+        </script>
+</body>
+
+</html>
