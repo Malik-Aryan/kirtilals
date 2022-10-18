@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .virtual_banner {
+            background-image: url("./image.png");
+            background-size: 100% 100%;
+            object-fit: contain;
+            background-repeat: no-repeat;
+            height: 600px;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 45px;
+            gap: 20px;
+        }
+
+        .banner1_header {
+            font-size: 48px;
+        }
+
+        .banner_content {
+            font-size: 14px;
+            width: 35%;
+        }
+
+        .virtual_section1 {
+            width: 100%;
+            display: flex;
+            margin-top: 40px;
+            gap: 24px;
+            justify-content: center;
+        }
+
+        .section1_container {
+            display: flex;
+            width: 80%
+        }
+
+        .virtual_info {
+            background-color: #FAFAFA;
+            margin-right: 50px;
+            width: 30%;
+            align-items: center;
+            display: flex;
+            height: fit-content;
+            flex-direction: column;
+        }
+
+
+        .virtual_info_header {
+            padding-top: 40px;
+            color: #6A828C;
+            font-size: 35px;
+        }
+
+        .virtual_list {
+            width: 75%;
+            padding-bottom: 30px;
+        }
+
+        .virtual_list li {
+            display: flex;
+            align-items: flex-start;
+            font-size: 12px;
+            gap: 5px;
+            padding-top: 30px;
+            list-style-type: none;
+            font-style: italic;
+        }
+
+        .virtual_list li span {
+            font-size: 37px;
+            color: #6A828C;
+            opacity: 0.37;
+        }
+
+        .virtual_list_item {
+            padding-top: 20px;
+            color: #6A828C;
+        }
+
+        .virtual_form {
+            display: flex;
+            flex-direction: column;
+            width: 75%;
+        }
+
+        .form_header {
+            padding-top: 40px;
+            font-size: 28px;
+        }
+
+        .form_content {
+            font-size: 14px;
+            color: #7A7B7C;
+            padding-top: 10px;
+        }
+
+        .form_virtual {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-top: 48px;
+        }
+
+        .label_input {
+            width: 50%;
+        }
+
+        .label_input input {
+            font-size: 12px;
+            color: #838486;
+            background-color: #FAFAFA;
+        }
+
+        .form_label1 {
+            display: flex;
+            font-size: 14px;
+            gap: 20px;
+            color: #3D434A;
+        }
+
+        .form_label1 input {
+            margin-top: 8px;
+            height: 53px;
+            width: 100%;
+            padding-left: 10px;
+            border: 1px solid #707173;
+            border-radius: 2px;
+        }
+
+
+        .label_input select {
+            margin-top: 8px;
+            height: 53px;
+            width: 105%;
+            border: 1px solid #707173;
+            border-radius: 2px;
+            padding-left: 10px;
+        }
+
+        .label_input2 {
+            font-size: 14px;
+            color: #3D434A;
+
+        }
+
+        .label_input2 textarea {
+            margin-top: 8px;
+            height: 53px;
+            width: 100%;
+            height: 80px;
+            padding: 10px;
+            border: 1px solid #707173;
+            border-radius: 2px;
+
+        }
+
+        .send_button {
+            margin: 10px 0px;
+            padding: 8px 32px;
+            width: 40%;
+            border-radius: 2px;
+            font-size: 14px;
+            color: #ffffff;
+            background: #000000;
+            letter-spacing: 2.8px;
+            border-radius: 2px;
+        }
+
+        @media (max-width:600px) {
+            .virtual_banner {
+                background-position: center;
+                background-size: cover;
+                padding-left: 0;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .section1_container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .banner_content {
+                width: 100%;
+            }
+
+            .virtual_info {
+                width: 100%;
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+
+            .virtual_form {
+                width: 100%
+            }
+
+            .form_label1 {
+                flex-direction: column;
+            }
+
+            .label_input {
+                width: 100%;
+
+            }
+
+            .label_input2 textarea {
+                margin-top: 0;
+            }
+
+            .send_button {
+                width: 80%;
+            }
+
+        }
+    </style>
+    <div>
+        <div class="virtual_banner">
+            <div class="banner1_header">
+                Virtual Store
+            </div>
+            <div class="banner_content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit nisi nec sagittis vulputate.
+                Fusce tristique,
+                ante at tempus efficitur, justo erat pulvinar dolor, sed gravida orci purus blandit purus.
+            </div>
+        </div>
+    </div>
+    <div class="virtual_section1">
+        <div class="section1_container">
+            <div class="virtual_info">
+                <div class="virtual_info_header">How to use the <br><b><i>Virtual Store?</i></b></div>
+                <hr>
+                <ol class="virtual_list">
+                    <li><span>1</span>
+                        <div class="virtual_list_item"> Fill your name, contact details, date and
+                            preferred time to book an appointment.</div>
+                    </li>
+                    <li><span>2</span>
+                        <div class="virtual_list_item"> Our team will connect with you through video
+                            call.</div>
+                    </li>
+                    <li><span>3</span>
+                        <div class="virtual_list_item"> You can choose to browse designs available
+                            across all our showrooms</div>
+                    </li>
+                    <li><span>4</span>
+                        <div class="virtual_list_item"> Opt for the designs you love, available across
+                            our stores or you can also request
+                            for
+                            customisation of existing designs.</div>
+                    </li>
+                    <li><span>5</span>
+                        <div class="virtual_list_item"> Once the designs are finalized, proceed to make
+                            online payment and we will have
+                            the jewellery
+                            delivered to you.</div>
+                    </li>
+                </ol>
+            </div>
+            <div class="virtual_form">
+                <div class="form_header">Create an appointment to browse jewelry collection</div>
+                <form class="form_virtual">
+                    <label class="form_label1">
+                        <span class="label_input ">Name<br /><input type="text" name="Name" placeholder="Name" /></span>
+                        <span class="label_input">Email<br /><input type="text" name="Email"
+                                placeholder="Email" /></span>
+                    </label>
+                    <label class="form_label1">
+                        <span class="label_input ">Mobile Number<br /><input type="number" name="Number"
+                                placeholder="Mobile Number" /></span>
+                        <span class="label_input">Metal type<br /><select>
+                                <option selected>
+                                    none
+                                </option>
+                                <option>
+                                    Silver
+                                </option>
+                                <option>
+                                    Bronze
+                                </option>
+                            </select>
+                    </label>
+                    <label class="form_label1">
+                        <span class="label_input">City<br /><input type="text" name="City" placeholder="City" /></span>
+                        <span class="label_input ">Appointment Date
+                            <br /><input type="date" name="Appointment" placeholder="Appointment Date" /></span>
+                        <span class="label_input">Appointment Time<br /><input type="time" name="Time"
+                                placeholder="Appointment Time" /></span>
+                    </label>
+                    <label>
+                        <span class="label_input2">
+                            Notes<br />
+                            <textarea name="note" rows="4" placeholder="Your message"></textarea></span>
+                    </label>
+                    <button type="submit" class="send_button"> BOOK APPOINTMENT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+    </script>
+</body>
+
+</html>
