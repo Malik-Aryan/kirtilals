@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .wishlist_container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wishlist_section_1 {
+        display: flex;
+        align-items: center;
+        padding: 20px 0px 20px 30px;
+        gap: 10px;
+        font-size: 27px;
+    }
+
+    .back_button {
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .wishlist_section_2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 150px;
+    }
+
+    .wishlist_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 95%;
+        gap: 24px;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .wishlist_grid_item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .wishlist_grid_item p {
+        font-weight: bolder;
+        font-size: 20px;
+
+    }
+
+    .wishlist_grid_item p span {
+        text-decoration: line-through;
+        font-size: 14px;
+        color: #C4C4C4;
+    }
+
+    .prdct_img {
+        display: flex;
+        padding: 5px 10px;
+        text-align: center;
+        color: #FFFFFF;
+        background-image: url(./prdct.png);
+        background-size: cover;
+        background-position: center;
+        width: 250px;
+        height: 400px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .Vtry {
+        background-color: #46575F;
+        border-radius: 2px;
+        padding: 4px 7px;
+    }
+
+    .Nin {
+        background-color: #6A828C;
+        border-radius: 2px;
+        padding: 4px 7px;
+
+    }
+
+    .RTS {
+        background-color: #474747;
+        border-radius: 2px;
+        padding: 4px 7px;
+    }
+
+    .wishlist_section_3 {
+        width: 100%;
+        padding: 50px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fffcf7;
+        gap: 60px;
+    }
+
+    .features_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 200px;
+    }
+
+    @media (max-width:600px) {
+
+        .wishlist_section_2 {
+            margin-bottom: 100px;
+        }
+
+        .wishlist_section_3 {
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: 50px;
+        }
+
+        .features_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .wishlist_grid {
+            grid-template-columns: 50% 50%;
+            grid-gap: 60px 0px;
+            width: 100%
+        }
+
+        .prdct_img {
+            font-size: 10px;
+            height: 300px;
+            width: 165px;
+        }
+    }
+</style>
+
+<body>
+    <div class="wishlist_container">
+        <div class="wishlist_section_1">
+            <button class="back_button">
+                <img src="./backIcon.png">
+            </button>
+            Your Wishlist
+        </div>
+        <div class="wishlist_section_2">
+            <div class="wishlist_grid">
+                <div class="wishlist_grid_item">
+                    <div class="prdct_img">
+                        <div class="Vtry">Virtual Try</div>
+                        <div class="Nin">New In</div>
+                        <div class="RTS">Ready To Ship</div>
+                    </div>
+                    Gold Mini stud ring
+                    <p>$650 <span>$590</span></p>
+                </div>
+                <div class="wishlist_grid_item">
+                    <div class="prdct_img">
+                        <div class="Vtry">Virtual Try</div>
+                        <div class="Nin">New In</div>
+                    </div>
+                    Gold Mini stud ring
+                    <p>$650 <span>$590</span></p>
+                </div>
+                <div class="wishlist_grid_item">
+                    <div class="prdct_img">
+                        <div class="Vtry">Virtual Try</div>
+                        <div class="Nin">New In</div>
+                    </div>
+                    Gold Mini stud ring
+                    <p>$650 <span>$590</span></p>
+                </div>
+                <div class="wishlist_grid_item">
+                    <div class="prdct_img">
+                        <div class="Nin">New In</div>
+                        <div class="RTS">Ready To Ship</div>
+                    </div>
+                    Gold Mini stud ring
+                    <p>$650 <span>$590</span></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="wishlist_section_3">
+            <div class="features_item">
+                <img src="/images/icons/Group-211069.svg" />Fast shipping
+            </div>
+            <div class="features_item">
+                <img src="/images/icons/Path-305787.svg" />Timeless pieces
+            </div>
+            <div class="features_item">
+                <img src="/images/icons/Group-212701.svg" />Heritage inspired
+            </div>
+            <div class="features_item">
+                <img src="/images/icons/Group-212704.svg" />Custom designs
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

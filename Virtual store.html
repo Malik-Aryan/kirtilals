@@ -17,7 +17,7 @@
 
         .virtual_banner {
             background-image: url("./image.png");
-            background-size: 100% 100%;
+            background-size: cover;
             object-fit: contain;
             background-repeat: no-repeat;
             height: 600px;
@@ -46,6 +46,7 @@
             margin-top: 40px;
             gap: 24px;
             justify-content: center;
+            margin-bottom: 50px;
         }
 
         .section1_container {
@@ -185,6 +186,24 @@
             border-radius: 2px;
         }
 
+        .virtual_section2 {
+            width: 100%;
+            padding: 50px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fffcf7;
+            gap: 60px;
+        }
+
+        .features_item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            width: 200px;
+        }
+
         @media (max-width:600px) {
             .virtual_banner {
                 background-position: center;
@@ -230,6 +249,21 @@
                 width: 80%;
             }
 
+            .virtual_section2 {
+                width: 100%;
+                display: grid;
+                grid-template-columns: auto auto;
+                grid-template-rows: auto auto;
+                gap: 30px;
+            }
+
+            .features_item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+                width: 100%;
+            }
         }
     </style>
     <div>
@@ -314,6 +348,20 @@
                     <button type="submit" class="send_button"> BOOK APPOINTMENT</button>
                 </form>
             </div>
+        </div>
+    </div>
+    <div class="virtual_section2">
+        <div class="features_item">
+            <img src="/images/icons/Group-211069.svg" />Fast shipping
+        </div>
+        <div class="features_item">
+            <img src="/images/icons/Path-305787.svg" />Timeless pieces
+        </div>
+        <div class="features_item">
+            <img src="/images/icons/Group-212701.svg" />Heritage inspired
+        </div>
+        <div class="features_item">
+            <img src="/images/icons/Group-212704.svg" />Custom designs
         </div>
     </div>
     <script>
